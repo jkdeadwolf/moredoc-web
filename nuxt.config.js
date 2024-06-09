@@ -1,6 +1,7 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -76,19 +77,19 @@ export default {
   },
   proxy: {
     '/api': {
-      target: 'http://127.0.0.1:8880', // 目标服务器
+      target: 'http://api.shijuan100.cn', // 目标服务器
       changeOrigin: true,
     },
     '/view': {
-      target: 'http://127.0.0.1:8880', // 目标服务器
+      target: 'http://view.shijuan100.cn', // 目标服务器
       changeOrigin: true,
     },
     '/uploads': {
-      target: 'http://127.0.0.1:8880', // 目标服务器
+      target: 'http://uploads.shijuan100.cn', // 目标服务器
       changeOrigin: true,
     },
     '/download': {
-      target: 'http://127.0.0.1:8880', // 目标服务器
+      target: 'http://download.shijuan100.cn', // 目标服务器
       changeOrigin: true,
     },
   },
