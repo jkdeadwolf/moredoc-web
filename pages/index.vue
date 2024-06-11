@@ -1,6 +1,6 @@
 <template>
   <div class="page page-index">
-    <div class="searchbox">
+    <div class="searchbox" v-if="banners">
       <el-carousel
         :interval="3000"
         arrow="always"
